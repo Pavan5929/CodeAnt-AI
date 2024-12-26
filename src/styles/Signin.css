@@ -1,0 +1,217 @@
+.signin-container{
+    display: flex;
+    flex-direction: column;
+   margin-top: 5rem;
+    height: 88vh;
+    align-items: center;
+    background-color: rgba(250, 250, 250, 1);
+   
+}
+
+.signbox{
+    background-color: rgba(255, 255, 255, 1);
+  height: 77vh;
+    width: 40vw;
+    text-align: center;
+    padding: 1rem;
+}
+
+.signin-header{
+    display: flex;
+    justify-content: center;
+    font-family: Satoshi;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 33px;
+    gap:8px;
+}
+
+.signin-tabs p{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    padding-top: 1rem;
+}
+
+.signin-tabs button{
+    padding: 16px 14px 16px 14px;
+    background-color: rgba(250, 250, 250, 1);
+    border-radius: 8px;
+    border:1px solid rgba(233, 234, 235, 1);
+    color:rgba(65, 70, 81, 1);
+    width: 15rem;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: 1rem;
+    
+}
+
+.signin-tabs button:hover{
+cursor: pointer;
+}
+
+.signin-tabs button:hover{
+    background-color: rgba(21, 112, 239, 1);
+    color:rgba(255, 255, 255, 1);
+}
+
+hr.divider{
+       border: 1px solid rgba(213, 215, 218, 1);
+       position: relative;
+       right: 1rem;
+       margin-top: 1rem;
+       width: 40vw;
+}
+
+.signin-options{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+ margin: auto ;
+ margin-top: 1rem;
+
+}
+
+.signin-options button{
+    border:1px solid rgba(216, 218, 229, 1);
+    background-color: rgba(255, 255, 255, 1);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 1rem;
+    color:rgba(23, 23, 23, 1);
+    display: flex;
+    justify-content: center;
+    gap:1rem;
+    
+}
+
+.signin-options button:hover{
+    cursor: pointer;
+}
+
+.agree{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 1rem;
+
+}
+
+.agree span{
+    font-weight: bold;
+}
+
+.loading-spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.spinner {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+ @media (max-width: 431px){
+    .signin-header{
+        font-size: 30px;
+    }
+.signbox{
+         width: 94vw;
+
+                height: 60vh;
+         
+
+}
+
+.signin-tabs p{
+    font-size: 24px;
+}
+
+.signin-tabs button{
+    width: 40vw;
+}
+
+hr.divider{
+    width: 94vw;
+}
+
+button.signin-button {
+    width: 79vw;
+    /* margin: auto; */
+    margin-left: -3rem;
+}
+.signin-container{
+        height: 103vh;
+}
+
+ }
+
+ @media (max-width: 391px){
+    .signbox{
+        height: 65vh !important;
+    }
+ }
+
+
+@media (max-width:376px){
+         .signbox {
+             height: 84vh !important;
+         }
+
+        }
+
+@media (max-width:429px){
+      .signbox{
+            height: 64vh;
+      }
+}
+
+@media(max-width:345px){
+    .signbox{
+        height: 63vh;
+    }
+           .signin-container .agree {
+               font-size: 13px;
+           }
+}
+
+@media (max-width:413px){
+    .signbox{
+        height: 60vh;
+    }
+}
+
+
+
+  @media(max-width:323px){
+        .signbox {
+            height: 94vh;
+        }
+
+    }
